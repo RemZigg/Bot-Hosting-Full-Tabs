@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Bot-Hosting: Full Tabs",
+  "version": "1.0.0",
+  "description": "Replaces the \"More\" dropdown on Bot-Hosting deployment pages with a full list of tabs (GitHub, Startup, Packages, Network, SFTP, Location, Sharing).",
+  "content_scripts": [
+    {
+      "matches": ["https://bot-hosting.net/a/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
