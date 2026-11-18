@@ -1,0 +1,18 @@
+/* Hide the "More" button and its dropdown */
+nav.tabs .more-wrap,
+.tabs-wrap .menu[role="menu"] {
+  display: none !important;
+}
+
+/* Let the long tab list scroll horizontally instead of breaking the layout */
+nav.tabs {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+nav.tabs::-webkit-scrollbar {
+  display: none;
+}
+nav.tabs a.tab {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
